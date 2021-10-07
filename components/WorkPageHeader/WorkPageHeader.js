@@ -10,7 +10,7 @@ const WorkPageHeader = ({ tags, title }) => {
 		<div>
 			<div className={styles.workPageHeader}>
 				{tags.map((tag) => (
-					<Tag value={tag} />
+					<Tag key={key} value={tag} />
 				))}
 			</div>
 			<Spacer m />

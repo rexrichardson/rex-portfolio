@@ -1,6 +1,7 @@
 import styles from "./InteractiveImage.module.css";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
+import Image from "next/dist/client/image";
 
 const InteractiveImage = ({ imageUrl }) => {
 	const [modalToggled, setModalToggled] = useState(false);
@@ -11,7 +12,7 @@ const InteractiveImage = ({ imageUrl }) => {
 
 	return (
 		<div>
-			<img
+			<Image
 				className={styles.interactiveImage}
 				src={imageUrl}
 				onClick={() => clicked()}
@@ -22,7 +23,7 @@ const InteractiveImage = ({ imageUrl }) => {
 						<AiFillCloseCircle size={50} />
 					</div>
 					<div className={styles.modalImageContainer}>
-						<img src={imageUrl} />
+						<Image src={imageUrl} />
 					</div>
 				</div>
 			)}

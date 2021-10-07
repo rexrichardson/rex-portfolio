@@ -24,7 +24,7 @@ export default function Post({ post, morePosts, preview }) {
 			<Nav />
 			<Container black>
 				{router.isFallback ? (
-					<PostTitle>Loading…</PostTitle>
+					<div>Loading…</div>
 				) : (
 					<>
 						<article className="mb-32">

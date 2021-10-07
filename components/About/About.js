@@ -12,7 +12,7 @@ const About = () => {
 			</Text>
 			<Spacer xl />
 			<div>
-				I'm a developer with a passion for mobile apps and a strong eye for
+				I&apos;m a developer with a passion for mobile apps and a strong eye for
 				design. <br />
 				QUALIFICATIONS <br />
 				Graduated from UWE Bristol with a First class honours in Digital Media.
