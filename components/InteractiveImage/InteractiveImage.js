@@ -12,7 +12,7 @@ const InteractiveImage = ({ imageUrl }) => {
 
 	return (
 		<div>
-			<Image
+			<img
 				className={styles.interactiveImage}
 				src={imageUrl}
 				onClick={() => clicked()}
@@ -23,7 +23,7 @@ const InteractiveImage = ({ imageUrl }) => {
 						<AiFillCloseCircle size={50} />
 					</div>
 					<div className={styles.modalImageContainer}>
-						<Image src={imageUrl} />
+						<img src={imageUrl} />
 					</div>
 				</div>
 			)}
