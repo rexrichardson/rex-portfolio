@@ -9,7 +9,7 @@ const WorkImages = ({ images }) => {
 		return (
 			<div>
 				<div className={styles.images}>
-					{images.map((image) => (
+					{images.map((image, index) => (
 						<InteractiveImage key={index} imageUrl={image} />
 					))}
 				</div>

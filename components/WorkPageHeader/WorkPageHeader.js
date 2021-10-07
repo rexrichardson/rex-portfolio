@@ -9,7 +9,7 @@ const WorkPageHeader = ({ tags, title }) => {
 	return (
 		<div>
 			<div className={styles.workPageHeader}>
-				{tags.map((tag) => (
+				{tags.map((tag, index) => (
 					<Tag key={index} value={tag} />
 				))}
 			</div>
