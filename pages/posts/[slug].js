@@ -12,7 +12,6 @@ import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
 import styles from "./WorkPage.module.css";
-import HeaderText from "../../components/HeaderText/HeaderText";
 
 export default function Post({ post }) {
 	const router = useRouter();
