@@ -1,0 +1,11 @@
+.tag {
+	background: white;
+	border-radius: 14px;
+	color: black;
+	padding: 6px 10px 6px 10px;
+	display: inline-flex;
+	margin-right: 8px;
+	height: 100%;
+	font-weight: 300;
+	font-size: 14px;
+}

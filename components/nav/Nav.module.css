@@ -1,0 +1,23 @@
+.nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.rightNav {
+	display: flex;
+}
+
+.leftNav {
+	display: flex;
+}
+
+.rightNav a {
+	margin-left: 20px;
+	font-weight: 600;
+}

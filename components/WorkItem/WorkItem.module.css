@@ -1,0 +1,60 @@
+.imagecontainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	border-radius: 8px;
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+.imagecontainer:hover img {
+	box-shadow: rgba(255, 255, 255, 0.3) 0px 8px 24px;
+}
+
+.imagecontainer:hover {
+	transform: scale(1.04);
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.subtitle {
+	font-size: 16px;
+}
+
+.overlayText {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	color: white;
+	font-family: sans-serif;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.imagecontainer:hover .overlayText {
+	height: 100%;
+	width: 100%;
+	padding: 24px 15px;
+	visibility: visible;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+	.imagecontainer:hover img {
+		box-shadow: none;
+	}
+}
