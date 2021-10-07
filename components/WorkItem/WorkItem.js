@@ -2,7 +2,7 @@ import React from "react";
 import Spacer from "../Spacer/Spacer";
 import Text from "../Text/Text";
 import styles from "./WorkItem.module.css";
-import Link from "next/Link";
+import Link from "next/link";
 
 const WorkItem = (props) => {
 	console.log(props.slug);
