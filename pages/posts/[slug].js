@@ -3,7 +3,6 @@ import ErrorPage from "next/error";
 import Container from "../../components/Container/Container";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
-import markdownToHtml from "../../lib/markdownToHtml";
 import WorkBody from "../../components/WorkBody/WorkBody";
 import Text from "../../components/Text/Text";
 import WorkPageHeader from "../../components/WorkPageHeader/WorkPageHeader";
@@ -12,6 +11,7 @@ import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
 import styles from "./WorkPage.module.css";
+import markdownToHtml from "../../lib/markdownToHtml.js";
 
 export default function Post({ post }) {
 	const router = useRouter();
@@ -23,7 +23,7 @@ export default function Post({ post }) {
 			<Nav />
 			<Container black>
 				{router.isFallback ? (
-					<div>Loading…</div>
+					<div>Loading</div>
 				) : (
 					<>
 						<article className="mb-32">
