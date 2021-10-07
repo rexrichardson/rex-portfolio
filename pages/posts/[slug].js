@@ -7,7 +7,7 @@ import markdownToHtml from "../markdownToHtml";
 import WorkBody from "../../components/WorkBody/WorkBody";
 import Text from "../../components/Text/Text";
 import WorkPageHeader from "../../components/WorkPageHeader/WorkPageHeader";
-import Nav from "../../components/nav/nav";
+import Nav from "../../components/nav/Nav";
 import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
