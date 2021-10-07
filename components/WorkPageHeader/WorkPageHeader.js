@@ -1,7 +1,7 @@
 import Text from "../Text/Text";
 import Tag from "../Tag/Tag";
 import Spacer from "../Spacer/Spacer";
-import styles from "./WorkpageHeader.module.css";
+import styles from "./WorkPageHeader.module.css";
 import HeaderText from "../HeaderText/HeaderText";
 
 const WorkPageHeader = ({ tags, title }) => {
