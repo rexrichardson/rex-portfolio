@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Nav from "../components/nav/Nav";
+import Nav from "../components/Nav/Nav";
 import Work from "../components/Work/Work";
 import About from "../components/About/About";
 import { getAllPosts } from "../lib/api";
