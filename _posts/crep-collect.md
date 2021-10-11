@@ -2,11 +2,15 @@
 title: "Crep Collect"
 coverImage: "/assets/work/crep-collect/cover.png"
 date: "2020-03-15T05:35:07.322Z"
-images:
+halfImages:
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"
-youtube: "iSzVgknSa9Q"
+fullImages:
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+youtube: "6tXKckwWlM8"
 tags:
   - "Swift UI"
   - "UX Design"

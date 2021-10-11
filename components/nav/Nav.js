@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Text from "../Text/Text";
 import styles from "./Nav.module.css";
+import * as Scroll from "react-scroll";
 
 const Nav = () => {
+	const ScrollLink = Scroll.Link;
+
 	return (
 		<div className={styles.nav}>
 			<div className={styles.leftNav}>
@@ -15,12 +18,20 @@ const Nav = () => {
 				</Link>
 			</div>
 			<div className={styles.rightNav}>
-				<a href="#Work">
-					<Text l>Work</Text>
-				</a>
-				<a href="#About">
+				<Link href="/work">
+					<a>
+						<Text l>Work</Text>
+					</a>
+				</Link>
+				<ScrollLink
+					activeClass="active"
+					to="about"
+					spy={true}
+					smooth={true}
+					duration={500}
+				>
 					<Text l>About</Text>
-				</a>
+				</ScrollLink>
 				<a href="#Contact">
 					<Text l>Contact</Text>
 				</a>

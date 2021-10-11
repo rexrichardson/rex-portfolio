@@ -2,7 +2,11 @@
 title: "Euro 2020 Ticket Monitor"
 coverImage: "/assets/work/euro-2020-monitor/cover.png"
 date: "2019-03-14T05:35:07.322Z"
-images:
+halfImages:
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+fullImages:
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"

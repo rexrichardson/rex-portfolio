@@ -36,18 +36,29 @@ export default function Post({ post }) {
 
 							<WorkBody content={post.content} />
 							<Spacer l />
+							{post.fullImages && (
+								<WorkImages width="full" images={post.fullImages} />
+							)}
+							<Spacer l />
 
-							<WorkImages images={post.images} />
+							{post.halfImages && (
+								<WorkImages width="half" images={post.halfImages} />
+							)}
+
 							<Spacer l />
 
 							{post.youtube && (
 								<div className={styles.video}>
-									<YouTube videoId={post.youtube}></YouTube>
+									<YouTube
+										className={styles.videoPlayer}
+										videoId={post.youtube}
+									></YouTube>
 								</div>
 							)}
 						</article>
 					</>
 				)}
+				<Spacer xl />
 			</Container>
 		</div>
 	);
@@ -63,7 +74,8 @@ export async function getStaticProps({ params }) {
 		"ogImage",
 		"coverImage",
 		"tags",
-		"images",
+		"halfImages",
+		"fullImages",
 		"youtube",
 	]);
 

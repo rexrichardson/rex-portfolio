@@ -2,7 +2,11 @@
 title: "Dplay Web Rebrand Prototype"
 coverImage: "/assets/work/dplay-web-prototype/cover.png"
 date: "2020-03-15T05:35:07.322Z"
-images:
+halfImages:
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+  - "/assets/work/wtb/cover.png"
+fullImages:
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"
   - "/assets/work/wtb/cover.png"

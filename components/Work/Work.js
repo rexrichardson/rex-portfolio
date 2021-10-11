@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../Container/Container";
 import Spacer from "../Spacer/Spacer";
 import Text from "../Text/Text";
@@ -28,11 +29,15 @@ const Work = ({ work, showAll }) => {
 			</div>
 			<Spacer s />
 
-			<div className={styles.viewAllRow}>
-				<a className={styles.viewAll} href="#viewall">
-					View All
-				</a>
-			</div>
+			{showAll === false && (
+				<div className={styles.viewAllRow}>
+					<Link href="/work">
+						<a className={styles.viewAll} href="#viewall">
+							View All
+						</a>
+					</Link>
+				</div>
+			)}
 			<Spacer m />
 		</Container>
 	);

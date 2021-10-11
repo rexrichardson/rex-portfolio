@@ -4,11 +4,13 @@ import Gallery from "react-grid-gallery";
 import { render } from "react-dom";
 import InteractiveImage from "../InteractiveImage/InteractiveImage";
 
-const WorkImages = ({ images }) => {
+const WorkImages = ({ images, width }) => {
 	{
 		return (
 			<div>
-				<div className={styles.images}>
+				<div
+					className={width === "full" ? styles.fullImages : styles.halfImages}
+				>
 					{images.map((image, index) => (
 						<InteractiveImage key={index} imageUrl={image} />
 					))}

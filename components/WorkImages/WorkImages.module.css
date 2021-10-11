@@ -1,12 +1,24 @@
-.images {
+.halfImages {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 16px;
 	width: 100%;
 }
 
-.images img {
+.fullImages {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
 	width: 100%;
+}
+
+.halfImages img {
+	width: 100%;
+}
+
+.fullImages img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .modal {
@@ -21,4 +33,19 @@
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0, 0, 0); /* Fallback color */
 	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+@media only screen and (max-width: 600px) {
+	.halfImages {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 1600px) {
+	.fullImages {
+		grid-template-columns: 1fr 1fr;
+	}
+	.halfImages {
+		grid-template-columns: 1fr 1fr;
+	}
 }
