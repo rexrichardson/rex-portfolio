@@ -1,5 +1,5 @@
 import Container from "../components/Container/Container";
-import Nav from "../components/nav/nav";
+import Nav from "../components/Nav/Nav";
 import Work from "../components/Work/Work";
 import { getAllPosts } from "../lib/api";
 

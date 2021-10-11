@@ -6,7 +6,7 @@ import Head from "next/head";
 import WorkBody from "../../components/WorkBody/WorkBody";
 import Text from "../../components/Text/Text";
 import WorkPageHeader from "../../components/WorkPageHeader/WorkPageHeader";
-import Nav from "../../components/nav/Nav";
+import Nav from "../../components/Nav/nav";
 import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
