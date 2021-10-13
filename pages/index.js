@@ -3,8 +3,8 @@ import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav/Nav";
 import Work from "../components/Work/Work";
 import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import { getAllPosts } from "../lib/api";
-import { useRef } from "react";
 
 export default function Home({ allPosts }) {
 	const work = allPosts;
@@ -21,6 +21,7 @@ export default function Home({ allPosts }) {
 			<main className={styles.main}>
 				{work.length > 0 && <Work work={work} showAll={false} />}
 				<About />
+				<Contact />
 			</main>
 			<footer className={styles.footer}>
 				<a

@@ -8,7 +8,7 @@ import styles from "./Work.module.css";
 const Work = ({ work, showAll }) => {
 	console.log(work);
 	return (
-		<Container black>
+		<Container id="work" black>
 			<Spacer xl />
 			<Text l semib>
 				MY WORK

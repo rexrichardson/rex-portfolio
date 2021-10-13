@@ -5,7 +5,9 @@ date: "2021-05-16T05:35:07.322Z"
 halfImages:
 
 fullImages:
-  - "/assets/work/wtb/1.png"
+  - "/assets/work/wtb/1.webp"
+  - "/assets/work/wtb/2.webp"
+
 youtube: "iSzVgknSa9Q"
 tags:
   - "React Native"

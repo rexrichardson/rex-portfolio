@@ -1,0 +1,42 @@
+.aboutFlex {
+	display: flex;
+}
+
+.aboutRight {
+	min-width: 50%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.rexImg {
+	width: auto;
+	height: auto;
+	max-width: 350px;
+	max-height: 350px;
+}
+
+.aboutFlex a {
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+	.aboutFlex {
+		flex-direction: column;
+	}
+
+	.aboutRight {
+		align-items: center;
+	}
+
+	.rexImg {
+		max-width: 250px;
+		max-height: 250px;
+	}
+}
+
+@media (min-width: 1150px) {
+	.aboutRight {
+		margin-top: -80px;
+	}
+}

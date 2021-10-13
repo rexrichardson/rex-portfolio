@@ -3,13 +3,12 @@ title: "Crep Collect"
 coverImage: "/assets/work/crep-collect/cover.png"
 date: "2020-03-15T05:35:07.322Z"
 halfImages:
-  - "/assets/work/wtb/cover.png"
-  - "/assets/work/wtb/cover.png"
-  - "/assets/work/wtb/cover.png"
 fullImages:
-  - "/assets/work/wtb/cover.png"
-  - "/assets/work/wtb/cover.png"
-  - "/assets/work/wtb/cover.png"
+  - "/assets/work/crep-collect/1.webp"
+  - "/assets/work/crep-collect/2.webp"
+  - "/assets/work/crep-collect/3.webp"
+  - "/assets/work/crep-collect/4.webp"
+
 youtube: "6tXKckwWlM8"
 tags:
   - "Swift UI"
@@ -19,16 +18,12 @@ tags:
 
 ## A swift app for sneaker collectors
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Crep Collect is an app that primarily allows sneaker collectors to document, track and share their sneaker collection. It also facilitates the creation of a wanted list of sneakers that the user would like to purchase in the future. In addition, there is a ‘Releases’ section to keep up to date with upcoming releases and allow them to be added to the user’s collection or wanted list.
 
-### UX Design
+### UX and UI Design
 
-Fully fledged UX designs were carried out with Axure.
-
-### UI Design
-
-The UI for the app was designed with Sketch
+Fully fledged UX designs were carried out with Axure. The UI for the app was designed with Sketch. Full design documentation was completed before development of the app begun, have a look [here](/assets/work/crep-collect/Crep-Collect-Design-Documentation.pdf).
 
 ### App Development
 
-The app was built with React Native and Expo. Firebase JS SDK was used for the backend of the app.
+The app was built with Swift UI. Firebase was used for the backend of the app. Check out the app in action in the video at the bottom of the page.

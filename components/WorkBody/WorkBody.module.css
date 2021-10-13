@@ -21,3 +21,7 @@
 .markdown img {
 	width: 50%;
 }
+.markdown a {
+	font-weight: 700;
+	text-decoration: underline;
+}
