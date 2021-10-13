@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Nav from "../components/Nav/Nav";
+import NavBar from "../components/NavBar/NavBar";
 import Work from "../components/Work/Work";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
@@ -16,7 +16,7 @@ export default function Home({ allPosts }) {
 				<meta name="description" content="A collection of my work" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Nav />
+			<NavBar />
 
 			<main className={styles.main}>
 				{work.length > 0 && <Work work={work} showAll={false} />}

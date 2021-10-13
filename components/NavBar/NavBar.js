@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Text from "../Text/Text";
-import styles from "./Nav.module.css";
+import styles from "./NavBar.module.css";
 import * as Scroll from "react-scroll";
 
-const Nav = () => {
+const NavBar = () => {
 	const ScrollLink = Scroll.Link;
 
 	return (
@@ -40,4 +40,4 @@ const Nav = () => {
 	);
 };
 
-export default Nav;
+export default NavBar;

@@ -1,5 +1,5 @@
 import Container from "../components/Container/Container";
-import Nav from "../components/Nav/Nav";
+import NavBar from "../components/NavBar/NavBar";
 import Work from "../components/Work/Work";
 import { getAllPosts } from "../lib/api";
 
@@ -8,7 +8,7 @@ const WorkPage = ({ allPosts }) => {
 
 	return (
 		<div>
-			<Nav />
+			<NavBar />
 			{work.length > 0 && <Work work={work} showAll={true} />}
 		</div>
 	);

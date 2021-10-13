@@ -4,7 +4,7 @@ import Container from "../../components/Container/Container";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import WorkBody from "../../components/WorkBody/WorkBody";
 import WorkPageHeader from "../../components/WorkPageHeader/WorkPageHeader";
-import Nav from "../../components/Nav/Nav";
+import NavBar from "../../components/NavBar/NavBar";
 import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
@@ -18,7 +18,7 @@ export default function Post({ post }) {
 	}
 	return (
 		<div>
-			<Nav />
+			<NavBar />
 			<Container black>
 				{router.isFallback ? (
 					<div>Loading.</div>
