@@ -32,9 +32,15 @@ const NavBar = () => {
 				>
 					<Text l>About</Text>
 				</ScrollLink>
-				<a href="#Contact">
+				<ScrollLink
+					activeClass="active"
+					to="contact"
+					spy={true}
+					smooth={true}
+					duration={500}
+				>
 					<Text l>Contact</Text>
-				</a>
+				</ScrollLink>
 			</div>
 		</div>
 	);

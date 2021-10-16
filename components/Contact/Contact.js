@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
 	return (
-		<Container id="about" black>
+		<Container id="contact" black>
 			<div className={styles.contact}>
 				<Spacer xl />
 				<Text l bold>
