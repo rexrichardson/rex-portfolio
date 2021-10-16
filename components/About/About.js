@@ -17,7 +17,7 @@ const About = () => {
 					I&apos;m a developer with a passion for mobile apps and a strong eye
 					for design.
 				</Text>
-				<Spacer xxl />
+				<Spacer l />
 
 				<div className={styles.aboutFlex}>
 					<div>
