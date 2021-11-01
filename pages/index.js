@@ -6,7 +6,6 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { getAllPosts } from "../lib/api";
 import Hero from "../components/Hero/Hero";
-import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,11 +15,8 @@ import SkillsRow from "../components/SkillsRow/SkillsRow";
 
 export default function Home({ allPosts }) {
 	const work = allPosts;
-	const router = useRouter();
-	const { id } = router.query;
 
 	useEffect(() => {
-		console.log(id);
 		Aos.init();
 	}, []);
 
