@@ -9,7 +9,7 @@ const Hero = () => {
 		<Container>
 			<div className={Styles.container}>
 				<HeaderText l center light>
-					Hi, I'm{" "}
+					Hi, I{"'"}m{" "}
 					<HeaderText l bold brand>
 						Rex Richardson.
 					</HeaderText>{" "}

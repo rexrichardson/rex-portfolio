@@ -17,7 +17,7 @@ const Contact = () => {
 				<div className={styles.content}>
 					<div className={styles.bottomContent}>
 						<Text m>
-							I'd love to hear from you. Use a method below to reach out.
+							I{"'"} love to hear from you. Use a method below to reach out.
 						</Text>
 						<Spacer xl />
 						<div className={styles.contactButtons}>
