@@ -16,10 +16,6 @@ import SkillsRow from "../components/SkillsRow/SkillsRow";
 export default function Home({ allPosts }) {
 	const work = allPosts;
 
-	useEffect(() => {
-		Aos.init();
-	}, []);
-
 	return (
 		<div className={styles.container}>
 			<Head>
