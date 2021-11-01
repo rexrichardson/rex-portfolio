@@ -20,11 +20,11 @@ WTB provides a platform that can successfully improve the efficiency of the buyi
 
 ### UX Design
 
-Fully fledged UX designs were carried out with Axure for every screen in the app. View all the designs [here](https://duckduckgo.com).
+Fully fledged UX designs were carried out with Axure for every screen in the app. View all the designs [here](/assets/work/wtb/WTB_UX.pdf).
 
 ### UI Design
 
-High fidelity user interface designs were designed with Sketch app. View them [here](https://duckduckgo.com).
+High fidelity user interface designs were designed with Sketch app. View them [here](/assets/work/wtb/WTB_UI.png).
 
 ### App Development
 

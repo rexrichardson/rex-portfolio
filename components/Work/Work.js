@@ -4,15 +4,17 @@ import Spacer from "../Spacer/Spacer";
 import Text from "../Text/Text";
 import WorkItem from "../WorkItem/WorkItem";
 import styles from "./Work.module.css";
+import ScrollDown from "../ScrollDown/ScrollDown";
+import Button from "../Button/Button";
+import HeaderText from "../HeaderText/HeaderText";
 
 const Work = ({ work, showAll }) => {
-	console.log(work);
 	return (
 		<Container id="work" black>
-			<Spacer xl />
-			<Text l semib>
-				MY WORK
-			</Text>
+			<HeaderText s bold>
+				My Work
+			</HeaderText>
+
 			<Spacer xl />
 			<div className={styles.grid}>
 				{work &&
@@ -30,15 +32,19 @@ const Work = ({ work, showAll }) => {
 			<Spacer s />
 
 			{showAll === false && (
-				<div className={styles.viewAllRow}>
-					<Link href="/work">
-						<a className={styles.viewAll} href="#viewall">
-							View All
-						</a>
-					</Link>
+				<div>
+					<Spacer l />
+
+					<div className={styles.viewAllRow}>
+						<Link href="/work">
+							<a className={styles.viewAll} href="#viewall">
+								<Button> View All</Button>
+							</a>
+						</Link>
+					</div>
+					<Spacer l />
 				</div>
 			)}
-			<Spacer m />
 		</Container>
 	);
 };

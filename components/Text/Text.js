@@ -17,6 +17,16 @@ const BaseText = styled.div`
 	font-weight: ${(props) =>
 		props.light ? "300" : props.semib ? "600" : props.bold ? "700" : "400"};
 
+	color: ${(props) => (props.grey ? "grey" : "inherit")};
+
+	background-image: ${(props) =>
+		props.brand
+			? "linear-gradient(315deg, #2a2a72 0%, #009ffd 74%)"
+			: "inherit"};
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: ${(props) =>
+		props.brand ? "transparent" : "inherit"};
 	@media (max-width: 768px) {
 		font-size: ${(props) =>
 			props.xs
@@ -43,6 +53,9 @@ const Text = (props) => {
 			xl={props.xl}
 			semib={props.semib}
 			bold={props.bold}
+			light={props.light}
+			grey={props.grey}
+			brand={props.brand}
 		>
 			{props.children}
 		</BaseText>

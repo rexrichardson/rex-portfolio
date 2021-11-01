@@ -7,10 +7,13 @@
 	padding-bottom: 40px;
 	padding-left: 5vw;
 	padding-right: 5vw;
+	z-index: 10;
 }
 
 .nav a {
 	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 .rightNav {
@@ -24,4 +27,8 @@
 .rightNav a {
 	margin-left: 20px;
 	font-weight: 600;
+}
+
+.nav a:hover {
+	transform: scale(1.04);
 }

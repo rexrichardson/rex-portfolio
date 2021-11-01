@@ -14,7 +14,21 @@ const BaseHeaderText = styled.div`
 			? "60px"
 			: "32px"};
 
-	font-weight: ${(props) => (props.semib ? "600" : props.bold ? "700" : "400")};
+	font-weight: ${(props) =>
+		props.light ? "300" : props.semib ? "600" : props.bold ? "700" : "400"};
+
+	text-align: ${(props) => (props.center ? "center" : "left")};
+
+	background-image: ${(props) =>
+		props.brand
+			? "linear-gradient(315deg, #2a2a72 0%, #009ffd 74%)"
+			: "inherit"};
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: ${(props) =>
+		props.brand ? "transparent" : "inherit"};
+
+	display: inline;
 
 	@media (max-width: 768px) {
 		font-size: ${(props) =>
@@ -25,7 +39,7 @@ const BaseHeaderText = styled.div`
 				: props.m
 				? "28px"
 				: props.l
-				? "36px"
+				? "30px"
 				: props.xl
 				? "48px"
 				: "32px"};
@@ -40,8 +54,11 @@ const HeaderText = (props) => {
 			m={props.m}
 			l={props.l}
 			xl={props.xl}
+			light={props.light}
 			semib={props.semib}
 			bold={props.bold}
+			center={props.center}
+			brand={props.brand}
 		>
 			{props.children}
 		</BaseHeaderText>

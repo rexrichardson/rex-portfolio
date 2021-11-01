@@ -5,9 +5,24 @@ import Work from "../components/Work/Work";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { getAllPosts } from "../lib/api";
+import Hero from "../components/Hero/Hero";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Footer from "../components/Footer/Footer";
+import Spacer from "../components/Spacer/Spacer";
+import SkillsRow from "../components/SkillsRow/SkillsRow";
 
 export default function Home({ allPosts }) {
 	const work = allPosts;
+	const router = useRouter();
+	const { id } = router.query;
+
+	useEffect(() => {
+		console.log(id);
+		Aos.init();
+	}, []);
 
 	return (
 		<div className={styles.container}>
@@ -16,22 +31,19 @@ export default function Home({ allPosts }) {
 				<meta name="description" content="A collection of my work" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar />
+			<NavBar home />
+			<Hero />
 
 			<main className={styles.main}>
 				{work.length > 0 && <Work work={work} showAll={false} />}
 				<About />
+				<SkillsRow />
+				<Spacer xxl />
+
 				<Contact />
 			</main>
-			<footer className={styles.footer}>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Built by Rex Richardson with Next.js
-				</a>
-			</footer>
+			<Spacer xxl />
+			<Footer />
 		</div>
 	);
 }

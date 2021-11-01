@@ -1,0 +1,33 @@
+.skillsRow {
+	display: grid;
+	flex-direction: row;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+
+.skillItem {
+	background: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	flex-direction: column;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+}
+
+.skillItem:hover {
+	transform: scale(1.04);
+}
+
+@media only screen and (max-width: 600px) {
+	.skillsRow {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

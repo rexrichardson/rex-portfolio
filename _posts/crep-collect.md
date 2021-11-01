@@ -22,7 +22,7 @@ Crep Collect is an app that primarily allows sneaker collectors to document, tra
 
 ### UX and UI Design
 
-Fully fledged UX designs were carried out with Axure. The UI for the app was designed with Sketch. Full design documentation was completed before development of the app begun, have a look [here](/assets/work/crep-collect/Crep-Collect-Design-Documentation.pdf).
+Fully fledged UX designs were carried out with Axure. The UI for the app was designed with Sketch. Full design documentation was completed before development of the app began, have a look [here](/assets/work/crep-collect/Crep-Collect-Design-Documentation.pdf).
 
 ### App Development
 
