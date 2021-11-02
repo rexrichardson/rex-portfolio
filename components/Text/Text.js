@@ -24,8 +24,6 @@ const BaseText = styled.div`
 			? "linear-gradient(315deg, #2a2a72 0%, #009ffd 74%)"
 			: "inherit"};
 
-	display: -webkit-inline-box;
-
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: ${(props) =>
 		props.brand ? "transparent" : "inherit"};

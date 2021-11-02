@@ -3,7 +3,7 @@
 }
 
 .aboutRight {
-	min-width: 50%;
+	min-width: 40%;
 	height: auto;
 	display: flex;
 	justify-content: center;
@@ -13,8 +13,8 @@
 .rexImg {
 	width: auto;
 	height: auto;
-	max-width: 350px;
-	max-height: 350px;
+	max-width: 320px;
+	max-height: 320px;
 }
 
 .aboutFlex a {
@@ -36,7 +36,7 @@
 	}
 
 	.rexImg {
-		max-width: 250px;
-		max-height: 250px;
+		max-width: 230px;
+		max-height: 230px;
 	}
 }

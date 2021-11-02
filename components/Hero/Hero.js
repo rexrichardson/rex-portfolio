@@ -11,8 +11,8 @@ const Hero = () => {
 				<HeaderText l center light>
 					Hi, I{"'"}m{" "}
 					<HeaderText l bold brand>
-						Rex Richardson.
-					</HeaderText>{" "}
+						Rex Richardson.&nbsp;
+					</HeaderText>
 					A developer with a passion for design, specialising in React.js and
 					React Native.
 				</HeaderText>

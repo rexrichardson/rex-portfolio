@@ -1,4 +1,5 @@
 import Container from "../components/Container/Container";
+import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import Work from "../components/Work/Work";
 import { getAllPosts } from "../lib/api";
@@ -10,6 +11,7 @@ const WorkPage = ({ allPosts }) => {
 		<div>
 			<NavBar />
 			{work.length > 0 && <Work work={work} showAll={true} />}
+			<Footer />
 		</div>
 	);
 };
