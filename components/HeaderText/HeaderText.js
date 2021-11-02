@@ -28,7 +28,7 @@ const BaseHeaderText = styled.div`
 	-webkit-text-fill-color: ${(props) =>
 		props.brand ? "transparent" : "inherit"};
 
-	display: inline;
+	display: -webkit-inline-box;
 
 	@media (max-width: 768px) {
 		font-size: ${(props) =>

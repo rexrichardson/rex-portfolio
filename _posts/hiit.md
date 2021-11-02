@@ -12,4 +12,4 @@ tags:
 
 ## Fitness app UI Design
 
-I receieved a client brief to brand a and mockup a fitness class app. Below, the brand and UI designs can be seen.
+I receieved a client brief to brand and mockup a fitness class app. Below, the brand and UI designs can be seen.
