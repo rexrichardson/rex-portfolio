@@ -10,7 +10,7 @@ import HeaderText from "../HeaderText/HeaderText";
 
 const SkillsRow = () => {
 	return (
-		<Container grey aos="fade-left">
+		<Container theme="grey" aos="fade-left">
 			<HeaderText s bold>
 				My Skills
 			</HeaderText>

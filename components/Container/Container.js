@@ -5,31 +5,34 @@ import Spacer from "../Spacer/Spacer";
 const BaseContainer = styled.div`
 	width: 100%;
 	background: ${(props) =>
-		props.black ? "black" : props.grey ? "#00000010" : "white"};
-	color: ${(props) => (props.black ? "white" : "black")};
+		props.theme === "black"
+			? "black"
+			: props.theme === "grey"
+			? "#00000010"
+			: "white"};
+	color: ${(props) => (props.theme === "black" ? "white" : "black")};
 	padding-left: 5vw;
 	padding-right: 5vw;
 	min-height: ${(props) => (props.fullHeight ? "100vh" : "auto")};
+	position: relative;
 `;
 
 const Container = ({
-	black,
+	theme,
 	className,
 	children,
 	id,
 	fullHeight,
 	grey,
-	white,
 	aos,
 }) => {
 	return (
 		<BaseContainer
-			black={black}
 			className={className}
 			id={id}
 			fullHeight={fullHeight}
 			grey={grey}
-			white={white}
+			theme={theme}
 		>
 			<div
 				data-aos={aos ? aos : "fade-up"}

@@ -10,7 +10,7 @@ import HeaderText from "../HeaderText/HeaderText";
 
 const Work = ({ work, showAll }) => {
 	return (
-		<Container id="work" black>
+		<Container id="work" theme="black">
 			<HeaderText s bold>
 				My Work
 			</HeaderText>

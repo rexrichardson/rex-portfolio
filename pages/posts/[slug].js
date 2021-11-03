@@ -10,8 +10,12 @@ import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
 import styles from "./WorkPage.module.css";
 import markdownToHtml from "../../lib/markdownToHtml";
+import { useState } from "react";
+import Toggle from "../../components/Toggle/Toggle";
 
 export default function Post({ post }) {
+	const [light, setLight] = useState(false);
+
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />;
@@ -19,7 +23,7 @@ export default function Post({ post }) {
 	return (
 		<div>
 			<NavBar />
-			<Container black>
+			<Container aos="none" theme={light ? "white" : "black"}>
 				{router.isFallback ? (
 					<div>Loading.</div>
 				) : (
@@ -30,6 +34,8 @@ export default function Post({ post }) {
 							<WorkPageHeader
 								tags={post.tags}
 								title={post.title}
+								theme={light ? "white" : "black"}
+								handleChange={() => setLight(!light)}
 							></WorkPageHeader>
 
 							<WorkBody content={post.content} />
@@ -58,6 +64,9 @@ export default function Post({ post }) {
 				)}
 				<Spacer xl />
 			</Container>
+			<div className={styles.modal}>
+				<div />
+			</div>
 		</div>
 	);
 }

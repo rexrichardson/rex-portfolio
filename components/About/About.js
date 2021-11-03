@@ -6,7 +6,7 @@ import styles from "./About.module.css";
 
 const About = () => {
 	return (
-		<Container id="about" white>
+		<Container id="about" theme="white">
 			<HeaderText s bold>
 				About Me
 			</HeaderText>
