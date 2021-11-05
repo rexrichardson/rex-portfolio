@@ -19,7 +19,7 @@ const Work = ({ work, showAll }) => {
 			<div className={styles.grid}>
 				{work &&
 					work
-						.slice(0, showAll === true ? work.length : 4)
+						.slice(0, showAll === true ? work.length : 6)
 						.map((post) => (
 							<WorkItem
 								key={post.slug}

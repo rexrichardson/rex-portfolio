@@ -4,7 +4,7 @@ coverImage: "/assets/work/quarantine/cover.webp"
 date: "2019-01-15T05:35:07.322Z"
 halfImages:
 fullImages:
-youtube:
+youtube: "XgLUCojjo20"
 tags:
   - "React.js"
   - "Next.js"

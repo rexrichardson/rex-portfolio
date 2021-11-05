@@ -19,7 +19,7 @@ export default function Home({ allPosts }) {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Rexs Portfolio</title>
+				<title>Rex Richardson</title>
 				<meta name="description" content="A collection of my work" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

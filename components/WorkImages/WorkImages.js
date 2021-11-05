@@ -9,7 +9,13 @@ const WorkImages = ({ images, width }) => {
 		return (
 			<div>
 				<div
-					className={width === "full" ? styles.fullImages : styles.halfImages}
+					className={
+						width === "full"
+							? styles.fullImages
+							: width == "third"
+							? styles.thirdImages
+							: styles.halfImages
+					}
 				>
 					{images.map((image, index) => (
 						<InteractiveImage key={index} imageUrl={image} />

@@ -12,6 +12,8 @@ import styles from "./WorkPage.module.css";
 import markdownToHtml from "../../lib/markdownToHtml";
 import { useState } from "react";
 import Toggle from "../../components/Toggle/Toggle";
+import Footer from "../../components/Footer/Footer";
+import Head from "next/head";
 
 export default function Post({ post }) {
 	const [light, setLight] = useState(false);
@@ -22,6 +24,11 @@ export default function Post({ post }) {
 	}
 	return (
 		<div>
+			<Head>
+				<title>Rex Richardson - {post.title}</title>
+				<meta name="description" content={post.title} />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<NavBar />
 			<Container aos="none" theme={light ? "white" : "black"}>
 				{router.isFallback ? (
@@ -49,6 +56,10 @@ export default function Post({ post }) {
 								<WorkImages width="half" images={post.halfImages} />
 							)}
 
+							{post.thirdImages && (
+								<WorkImages width="third" images={post.thirdImages} />
+							)}
+
 							<Spacer l />
 
 							{post.youtube && (
@@ -64,9 +75,7 @@ export default function Post({ post }) {
 				)}
 				<Spacer xl />
 			</Container>
-			<div className={styles.modal}>
-				<div />
-			</div>
+			<Footer />
 		</div>
 	);
 }
@@ -81,6 +90,7 @@ export async function getStaticProps({ params }) {
 		"ogImage",
 		"coverImage",
 		"tags",
+		"thirdImages",
 		"halfImages",
 		"fullImages",
 		"youtube",

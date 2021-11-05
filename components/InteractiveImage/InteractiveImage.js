@@ -1,7 +1,7 @@
 import styles from "./InteractiveImage.module.css";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import Image from "next/dist/client/image";
+import { MdDirtyLens } from "react-icons/md";
 
 const InteractiveImage = ({ imageUrl }) => {
 	const [modalToggled, setModalToggled] = useState(false);
@@ -23,7 +23,7 @@ const InteractiveImage = ({ imageUrl }) => {
 						<AiFillCloseCircle size={50} />
 					</div>
 					<div className={styles.modalImageContainer}>
-						<img src={imageUrl} />
+						<img className={styles.modalImage} src={imageUrl} />
 					</div>
 				</div>
 			)}
