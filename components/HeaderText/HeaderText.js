@@ -41,7 +41,7 @@ const BaseHeaderText = styled.div`
 				: props.l
 				? "30px"
 				: props.xl
-				? "48px"
+				? "40px"
 				: "32px"};
 	}
 `;

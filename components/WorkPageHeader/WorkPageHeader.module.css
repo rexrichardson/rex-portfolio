@@ -4,3 +4,15 @@
 	align-items: center;
 	justify-content: space-between;
 }
+
+@media only screen and (max-width: 400px) {
+	.workPageHeader {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.tags {
+		margin-top: 16px;
+	}
+}

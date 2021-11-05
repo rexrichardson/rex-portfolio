@@ -13,8 +13,8 @@ const BaseToggle = styled.input`
 
 const BaseLabel = styled.label`
 	display: flex;
-	width: 90px;
-	height: 45px;
+	width: 80px;
+	height: 40px;
 	border-radius: 99em;
 	position: relative;
 	cursor: pointer;
@@ -26,8 +26,8 @@ const BaseLabel = styled.label`
 		color: white;
 		display: block;
 		position: absolute;
-		width: 27px;
-		height: 27px;
+		width: 24px;
+		height: 24px;
 		background-color: black;
 		border-radius: 50%;
 		top: 9px;

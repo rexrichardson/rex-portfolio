@@ -10,7 +10,7 @@ const WorkPageHeader = ({ tags, title, theme, handleChange }) => {
 	return (
 		<div>
 			<div className={styles.workPageHeader}>
-				<div>
+				<div className={styles.tags}>
 					{tags.map((tag, index) => (
 						<Tag key={index} value={tag} theme={theme} />
 					))}

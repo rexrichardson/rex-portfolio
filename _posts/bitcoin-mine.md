@@ -8,7 +8,6 @@ youtube: "vXJ3Cx3CNaM"
 tags:
   - "UX Design"
   - "UI Design"
-  - "Prototyping"
 ---
 
 ## A prototype for a bitcoin themed mobile game, that highlights the issue of carbon emissions from cryptocurrencies.

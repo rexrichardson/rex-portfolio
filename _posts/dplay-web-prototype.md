@@ -8,7 +8,6 @@ fullImages:
 youtube: "V6LnNfPUG6A"
 tags:
   - "React"
-  - "Next.js"
   - "HTML"
   - "CSS"
   - "JS"

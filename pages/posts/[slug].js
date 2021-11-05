@@ -37,7 +37,6 @@ export default function Post({ post }) {
 					<>
 						<article className="mb-32">
 							<title>{post.title}</title>
-							<Spacer l />
 							<WorkPageHeader
 								tags={post.tags}
 								title={post.title}
