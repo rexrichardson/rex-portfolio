@@ -15,7 +15,6 @@ const BaseLabel = styled.label`
 	display: flex;
 	width: 90px;
 	height: 45px;
-	border: 6px solid;
 	border-radius: 99em;
 	position: relative;
 	cursor: pointer;
@@ -31,7 +30,7 @@ const BaseLabel = styled.label`
 		height: 27px;
 		background-color: black;
 		border-radius: 50%;
-		top: 4px;
+		top: 9px;
 		left: 6px;
 	}
 `;
