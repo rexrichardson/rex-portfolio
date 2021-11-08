@@ -32,6 +32,6 @@
     "eslint-config-next": "11.1.2"
   },
   "engines": {
-    "yarn": "1.22.10"
+    "yarn": "1.22.17"
   }
 }
