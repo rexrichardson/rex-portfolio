@@ -49,7 +49,7 @@ const NavBar = ({ home }) => {
 				</div>
 			) : (
 				<div className={styles.rightNav}>
-					<Link href="/" query={"work"}>
+					<Link href="/#work" query={"work"}>
 						<a>
 							<Text l>Work</Text>
 						</a>

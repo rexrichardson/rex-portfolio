@@ -11,7 +11,7 @@ const Contact = () => {
 			<div className={styles.contact}>
 				<Spacer xxl />
 				<HeaderText s bold>
-					Interested in hiring me?
+					Want to chat about a project?
 				</HeaderText>
 				<Spacer xl />
 				<div className={styles.content}>

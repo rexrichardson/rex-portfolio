@@ -12,10 +12,10 @@ tags:
   - "React.js"
 ---
 
-## Portfolio web app
+## Building a blog
 
-I built my portfolio using Next.js and React. Markdown is used to format my work articles. Next.js is fetches the markdown files at build and displays them on the site.
+My portfolio is built using Next.js and React. In order to have a blog style site, Markdown files are used to format my work articles and the remark package is used to convert the files to HTML. Next.js fetches the markdown files at build and displays them on the site. A 'slug' page component generates pages at build for each markdown file and displays the html.
 
 ## Open Source Code
 
-The code for my portfolio is available publically on github. [Check it out here](https://github.com/rblue36/rex-portfolio).
+The code for my portfolio is available on github. [Check it out here](https://github.com/rblue36/rex-portfolio).

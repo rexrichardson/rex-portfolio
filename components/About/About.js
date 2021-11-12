@@ -13,11 +13,16 @@ const About = () => {
 			<Spacer l />
 			<div>
 				<Text l>
-					I am a developer that recently graduated from university. My main
-					experience lies in front-end development but I have a passion for
-					design and a grounding in back-end development. Mobile apps are a love
-					of mine, having developed them for 10 years, starting at the age of
-					13.
+					My interest in development started at the age of 13, when I created my
+					first mobile app, KSI Sounds. This kickstarted my avid interest in
+					developing mobile apps which has expanded into other forms such as web
+					apps.
+					<br />
+					<br />I am a recently graduate in Digital Media, where I focused on
+					front-end development in the form of mobile apps and web apps.
+					Alongside innovative development, I recognise the importance of
+					effective and functional design. My knowledgebase in back-end
+					development allows fully fledged applicatons.
 				</Text>
 				<Spacer xxl />
 
@@ -32,8 +37,8 @@ const About = () => {
 							Media.
 							<br />
 							<br />
-							Some modules studied were: Mobile Apps, AI, User Experience,
-							Interaction Design and Internet of Things.
+							Modules included: Mobile Apps, AI, User Experience, Interaction
+							Design and Internet of Things.
 						</Text>
 						<Spacer xxl />
 						<Text m grey>
@@ -44,7 +49,8 @@ const About = () => {
 							<li>
 								<Text l>
 									1 year at Discovery as a digital designer and front end web
-									developer.{" "}
+									developer. Contributed to development of the design system for
+									Dplay (now Discovery+).
 								</Text>
 							</li>{" "}
 							<Spacer xs />
