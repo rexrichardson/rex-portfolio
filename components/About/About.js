@@ -18,11 +18,11 @@ const About = () => {
 					developing mobile apps which has expanded into other forms such as web
 					apps.
 					<br />
-					<br />I am a recently graduate in Digital Media, where I focused on
+					<br />I am a recent graduate in Digital Media, where I focused on
 					front-end development in the form of mobile apps and web apps.
 					Alongside innovative development, I recognise the importance of
 					effective and functional design. My knowledgebase in back-end
-					development allows fully fledged applicatons.
+					development allows me to create fully fledged applicatons.
 				</Text>
 				<Spacer xxl />
 
