@@ -22,19 +22,20 @@ const About = () => {
           </div>
           <div>
             <Text l light className={"text-justify"}>
-              Since developing my first mobile app, KSI Sounds, at 13, I've
+              Since developing my first mobile app, KSI Sounds, at 13, I&apos;ve
               cultivated a passion for app creation that has broadened to
               include web applications.
               <br />
               <br />
               After graduating with a first in Digital Media, where I honed my
-              programming and user interface skills, I've applied and developed
-              those proficiencies. I've built my own full-stack mobile and web
-              applications and executed high-quality freelance front-end work.
+              programming and user interface skills, I&apos;ve applied and
+              developed those proficiencies. I&apos;ve built my own full-stack
+              mobile and web applications and executed high-quality freelance
+              front-end work.
               <br />
               <br />
-              Alongside my development journey, I've also founded and run tech
-              businesses, including Tex Technologies. This experience has
+              Alongside my development journey, I&apos;ve also founded and run
+              tech businesses, including Tex Technologies. This experience has
               allowed me to blend my technical abilities with real-world
               business insights, further strengthening my approach to creating
               practical and efficient digital solutions.
