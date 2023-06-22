@@ -1,32 +1,32 @@
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .container::-webkit-scrollbar {
-	width: 0 !important;
+  width: 0 !important;
 }
 
 .viewAllRow {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .headerRow {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-	.grid {
-		grid-template-columns: 1fr;
-	}
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 1600px) {
-	.grid {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

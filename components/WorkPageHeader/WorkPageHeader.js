@@ -3,27 +3,24 @@ import Tag from "../Tag/Tag";
 import Spacer from "../Spacer/Spacer";
 import styles from "./WorkPageHeader.module.css";
 import HeaderText from "../HeaderText/HeaderText";
-import Toggle from "../Toggle/Toggle";
 
-const WorkPageHeader = ({ tags, title, theme, handleChange }) => {
-	console.log(tags);
-	return (
-		<div>
-			<div className={styles.workPageHeader}>
-				<div className={styles.tags}>
-					{tags.map((tag, index) => (
-						<Tag key={index} value={tag} theme={theme} />
-					))}
-				</div>
-				<Toggle handleChange={handleChange}></Toggle>
-			</div>
-			<Spacer m />
+const WorkPageHeader = ({ tags, title, theme }) => {
+  return (
+    <div className="flex flex-col items-center">
+      <div className={styles.workPageHeader}>
+        <div className={styles.tags}>
+          {tags.map((tag, index) => (
+            <Tag key={index} value={tag} theme={theme} />
+          ))}
+        </div>
+      </div>
+      <Spacer m />
 
-			<HeaderText xl bold>
-				{title}
-			</HeaderText>
-		</div>
-	);
+      <HeaderText xl bold>
+        {title}
+      </HeaderText>
+    </div>
+  );
 };
 
 export default WorkPageHeader;

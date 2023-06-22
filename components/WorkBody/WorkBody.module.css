@@ -1,27 +1,27 @@
 .markdown {
-	@apply text-lg leading-relaxed;
-	font-weight: 300;
+  @apply text-lg leading-relaxed;
+  font-weight: 300;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-	@apply my-6;
+  @apply my-6;
 }
 
 .markdown h2 {
-	@apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-	@apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
 .markdown img {
-	width: 50%;
+  width: 50%;
 }
 .markdown a {
-	font-weight: 700;
-	text-decoration: underline;
+  font-weight: 700;
+  text-decoration: underline;
 }

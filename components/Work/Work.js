@@ -9,44 +9,46 @@ import Button from "../Button/Button";
 import HeaderText from "../HeaderText/HeaderText";
 
 const Work = ({ work, showAll }) => {
-	return (
-		<Container id="work" theme="black">
-			<HeaderText s bold>
-				My Work
-			</HeaderText>
+  return (
+    <Container
+      id="work"
+      theme="grey"
+      className={"border-b border-t border-gray-300  "}
+    >
+      <HeaderText s bold>
+        My Work
+      </HeaderText>
 
-			<Spacer xl />
-			<div className={styles.grid}>
-				{work &&
-					work
-						.slice(0, showAll === true ? work.length : 6)
-						.map((post) => (
-							<WorkItem
-								key={post.slug}
-								name={post.title}
-								img={post.coverImage}
-								slug={post.slug}
-							/>
-						))}
-			</div>
-			<Spacer s />
+      <Spacer xl />
+      <div className={styles.grid}>
+        {work &&
+          work
+            .slice(0, showAll === true ? work.length : 6)
+            .map((post) => (
+              <WorkItem
+                key={post.slug}
+                name={post.title}
+                img={post.coverImage}
+                slug={post.slug}
+              />
+            ))}
+      </div>
+      <Spacer s />
 
-			{showAll === false && (
-				<div>
-					<Spacer l />
+      {showAll === false && (
+        <div>
+          <Spacer l />
 
-					<div className={styles.viewAllRow}>
-						<Link href="/work">
-							<a className={styles.viewAll} href="#viewall">
-								<Button> View All</Button>
-							</a>
-						</Link>
-					</div>
-					<Spacer l />
-				</div>
-			)}
-		</Container>
-	);
+          <div className={styles.viewAllRow}>
+            <Link href="/work" className={styles.viewAll}>
+              <Button text={"View All"} size="xl"></Button>
+            </Link>
+          </div>
+          <Spacer l />
+        </div>
+      )}
+    </Container>
+  );
 };
 
 export default Work;

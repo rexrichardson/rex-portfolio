@@ -12,48 +12,46 @@ import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
 import Spacer from "../components/Spacer/Spacer";
 import SkillsRow from "../components/SkillsRow/SkillsRow";
+import GridPattern from "../components/GridPattern/GridPattern";
 
 export default function Home({ allPosts }) {
-	const work = allPosts;
+  const work = allPosts;
 
-	return (
-		<div className={styles.container}>
-			<Head>
-				<title>Rex Richardson</title>
-				<meta name="description" content="A collection of my work" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<NavBar home />
-			<Hero />
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Rex Richardson</title>
+        <meta name="description" content="A collection of my work" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <NavBar home />
+      <Hero />
 
-			<main className={styles.main}>
-				{work.length > 0 && <Work work={work} showAll={false} />}
-				<About />
-				<SkillsRow />
-				<Spacer xxl />
+      <main className={styles.main}>
+        <About />
+        <SkillsRow />
+        {work.length > 0 && <Work work={work} showAll={false} />}
+        <Contact />
+      </main>
 
-				<Contact />
-			</main>
-			<Spacer xxl />
-			<Footer />
-		</div>
-	);
+      <Footer />
+    </div>
+  );
 }
 
 export async function getStaticProps() {
-	const allPosts = getAllPosts([
-		"title",
-		"date",
-		"slug",
-		"author",
-		"coverImage",
-		"tags",
-		"youtube",
-		"halfImages",
-		"fullImages",
-	]);
-	console.log(allPosts);
-	return {
-		props: { allPosts },
-	};
+  const allPosts = getAllPosts([
+    "title",
+    "date",
+    "slug",
+    "author",
+    "coverImage",
+    "tags",
+    "youtube",
+    "halfImages",
+    "fullImages",
+  ]);
+  return {
+    props: { allPosts },
+  };
 }

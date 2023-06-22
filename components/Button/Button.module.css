@@ -1,13 +1,13 @@
 .button {
-	background: transparent;
-	color: white;
-	padding: 12px 40px 12px 40px;
-	border-radius: 32px;
-	border: 2px solid white;
-	transition: 0.3s;
+  background: transparent;
+  color: black;
+  padding: 12px 40px 12px 40px;
+  border-radius: 32px;
+  border: 2px solid black;
+  transition: 0.3s;
 }
 
 .button:hover {
-	background: white;
-	color: black;
+  background: black;
+  color: white;
 }

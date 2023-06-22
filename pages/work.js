@@ -35,7 +35,6 @@ export async function getStaticProps() {
 		"halfImages",
 		"fullImages",
 	]);
-	console.log(allPosts);
 	return {
 		props: { allPosts },
 	};
