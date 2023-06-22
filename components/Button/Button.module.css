@@ -7,6 +7,10 @@
   transition: 0.3s;
 }
 
+.brand {
+  background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
 .button:hover {
   background: black;
   color: white;
