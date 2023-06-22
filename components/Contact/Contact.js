@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 w-full">
+    <div
+      className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 w-full"
+      id="contact"
+    >
       <div className="absolute inset-y-0 right-1/2 -z-10 -mr-48 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" />
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">

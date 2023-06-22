@@ -14,7 +14,7 @@ const Hero = () => (
         <div className={Styles.container}>
           <HeaderText l center light>
             Hi, I{"'"}m{" "}
-            <HeaderText l bold brand>
+            <HeaderText l bold brand center>
               Rex Richardson.&nbsp;
             </HeaderText>
             A full-stack developer with a passion for design, specialising in

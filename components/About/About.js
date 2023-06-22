@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "../Container/Container";
 import HeaderText from "../HeaderText/HeaderText";
 import Spacer from "../Spacer/Spacer";
@@ -14,10 +15,12 @@ const About = () => {
       <div>
         <div className={styles.aboutFlex}>
           <div className="w-full md:w-[80rem]">
-            <img
+            <Image
               src="/assets/about/rex_new.webp"
               alt=""
-              className="w-full rounded-2xl bg-gray-50 object-cover lg:h-[29.5rem]"
+              className="w-full rounded-2xl bg-gray-50 object-cover md:h-[28rem]  2xl:object-top	"
+              width={400}
+              height={400}
             />
           </div>
           <div>

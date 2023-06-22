@@ -37,7 +37,8 @@ export default function Button({ size = "sm", text, color = "light" }) {
       colorClass = "bg-dark text-white"; // Replace with actual dark class
       break;
     case "brand":
-      colorClass = "bg-gradient-to-r from-[#009ffd] to-[#2a2a72] text-white"; // Replace with actual brand class
+      colorClass =
+        "bg-gradient-to-r from-[#009ffd] to-[#2a2a72] text-white ring-0"; // Replace with actual brand class
       break;
     default:
       colorClass = "bg-white text-gray-900";

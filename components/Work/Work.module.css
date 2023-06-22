@@ -8,11 +8,6 @@
   width: 0 !important;
 }
 
-.viewAllRow {
-  display: flex;
-  justify-content: center;
-}
-
 .headerRow {
   display: flex;
   justify-content: space-between;
@@ -25,7 +20,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }

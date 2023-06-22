@@ -1,27 +1,26 @@
 .container {
-	padding-left: 60px;
-	padding-right: 60px;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: -98px;
-	flex-direction: column;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container a {
-	cursor: pointer;
-	-webkit-transition: 0.3s ease-in-out;
-	transition: 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container a:hover {
-	transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 @media only screen and (max-width: 600px) {
-	.container {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }

@@ -7,17 +7,33 @@ import styles from "./Work.module.css";
 import ScrollDown from "../ScrollDown/ScrollDown";
 import Button from "../Button/Button";
 import HeaderText from "../HeaderText/HeaderText";
+import { FaChevronRight } from "react-icons/fa";
 
 const Work = ({ work, showAll }) => {
   return (
     <Container
       id="work"
       theme="grey"
-      className={"border-b border-t border-gray-300  "}
+      className={"border-b border-t border-gray-300 "}
     >
-      <HeaderText s bold>
-        My Work
-      </HeaderText>
+      <div className="flex justify-between w-full items-center">
+        <HeaderText s bold>
+          My Work
+        </HeaderText>
+        {showAll === false && (
+          <div>
+            <Link href="/work" className={styles.viewAll}>
+              <div className="flex justify-center items-center gap-2 hover:gap-4 transition-all ease-in-out">
+                <Text l semib>
+                  View All
+                </Text>
+                <FaChevronRight size={20} />
+              </div>
+            </Link>
+            <Spacer l />
+          </div>
+        )}
+      </div>
 
       <Spacer xl />
       <div className={styles.grid}>
@@ -34,19 +50,6 @@ const Work = ({ work, showAll }) => {
             ))}
       </div>
       <Spacer s />
-
-      {showAll === false && (
-        <div>
-          <Spacer l />
-
-          <div className={styles.viewAllRow}>
-            <Link href="/work" className={styles.viewAll}>
-              <Button text={"View All"} size="xl"></Button>
-            </Link>
-          </div>
-          <Spacer l />
-        </div>
-      )}
     </Container>
   );
 };
