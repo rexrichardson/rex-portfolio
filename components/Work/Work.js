@@ -9,7 +9,6 @@ import HeaderText from "../HeaderText/HeaderText";
 import { FaChevronRight } from "react-icons/fa";
 
 const Work = ({ work, showAll }) => {
-  console.log(work);
   return (
     <Container
       id="work"

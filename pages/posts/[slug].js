@@ -17,8 +17,6 @@ import InteractiveImage from "../../components/InteractiveImage/InteractiveImage
 export default function Post({ post }) {
   const [light, setLight] = useState(false);
 
-  console.log(post);
-
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
