@@ -19,23 +19,23 @@ const SkillsRow = () => {
           </HeaderText>
           <Spacer s />
           <Text m light grey>
-            Leveraging several years of experience in the dynamic fields of web
-            and mobile app development, I offer comprehensive services aimed at
-            transforming your digital vision into reality.
+            Drawing on years of experience in web and mobile app development, I
+            combine my strong development skills with a keen eye for design to
+            create digital solutions that align with your vision.
           </Text>
         </div>
       </div>
       <Spacer xl />
 
-      <div className={styles.skillsRow}>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <ServicesItem
           service={{
             title: "Web Development",
             points: [
               "Strong knowledge of React.js and Next.js.",
-              "Focus on creating user-centric, responsive, and efficient web platforms.",
-              "Experience with multiple Content Management Systems (CMS) for smooth content updates and maintenance.",
-              "Mid-level developer with 4 years of hands-on experience in building interactive websites and complex web applications.",
+              "Focus on building fast, user-centric, and SEO-optimized web apps.",
+              "Experience with various CMS platforms for efficient content management.",
+              "Mid-level developer with 2 years of hands-on experience building web applications.",
             ],
             pattern: {
               y: 16,
@@ -51,10 +51,10 @@ const SkillsRow = () => {
           service={{
             title: "App Development",
             points: [
-              "Expertise in React Native.",
-              "Proven experience in creating user-friendly apps for both iOS and Android platforms.",
-              "Balancing quality, performance, and aesthetic appeal in every mobile solution.",
-              "4 years of solid industry experience, ensuring robust and reliable app development.",
+              "Skilled in using React Native for cross-platform app development.",
+              "Create engaging iOS and Android apps with a user-first approach.",
+              "Experience using Firebase for app authentication and backend operations.",
+              "Solely built three complex apps from scratch, handling UI, front-end, and backend tasks.",
             ],
             pattern: {
               y: -6,
@@ -66,6 +66,26 @@ const SkillsRow = () => {
               ],
             },
             icon: "app",
+          }}
+        />
+        <ServicesItem
+          service={{
+            title: "UI Design",
+            points: [
+              "Proficiency in Sketch and Figma for intuitive UI creation.",
+              "Adept at transforming user needs into responsive designs.",
+              "Strong design aesthetics for a superior user experience.",
+              "Commitment to iterative design for constant refinement.",
+            ],
+            pattern: {
+              y: 16,
+              squares: [
+                [3, 5],
+                [-3, 0],
+                [0, 3],
+              ],
+            },
+            icon: "ui",
           }}
         />
       </div>

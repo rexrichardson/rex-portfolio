@@ -10,6 +10,7 @@ import HeaderText from "../HeaderText/HeaderText";
 import { FaChevronRight } from "react-icons/fa";
 
 const Work = ({ work, showAll }) => {
+  console.log(work);
   return (
     <Container
       id="work"
@@ -23,14 +24,13 @@ const Work = ({ work, showAll }) => {
         {showAll === false && (
           <div>
             <Link href="/work" className={styles.viewAll}>
-              <div className="flex justify-center items-center gap-2 hover:gap-4 transition-all ease-in-out">
+              <div className="flex flex-row justify-center items-center gap-2 hover:gap-4 transition-all ease-in-out">
                 <Text l semib>
                   View All
                 </Text>
                 <FaChevronRight size={20} />
               </div>
             </Link>
-            <Spacer l />
           </div>
         )}
       </div>

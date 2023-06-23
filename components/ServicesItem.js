@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { useId } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { MdPhoneIphone, MdOutlineWeb } from "react-icons/md";
+import {
+  MdPhoneIphone,
+  MdOutlineWeb,
+  MdOutlineDesignServices,
+} from "react-icons/md";
 import BulletCheck from "./BulletCheck/BulletCheck";
 import Spacer from "./Spacer/Spacer";
 import GridPattern from "./GridPattern/GridPattern";
@@ -66,6 +70,8 @@ export default function ServicesItem({ service, theme }) {
           <MdPhoneIphone size={40} />
         ) : service.icon == "web" ? (
           <MdOutlineWeb size={40} />
+        ) : service.icon == "ui" ? (
+          <MdOutlineDesignServices size={40} />
         ) : (
           ""
         )}
