@@ -1,66 +1,60 @@
-import styled from "styled-components";
+import React from "react";
 
-const BaseText = styled.div`
-  font-size: ${(props) =>
-    props.xs
-      ? "12px"
-      : props.s
-      ? "14px"
-      : props.m
-      ? "16px"
-      : props.l
-      ? "20px"
-      : props.xl
-      ? "24px"
-      : "20px"};
+const Text = ({
+  xs,
+  s,
+  m,
+  l,
+  xl,
+  semib,
+  bold,
+  light,
+  grey,
+  brand,
+  className,
+  children,
+}) => {
+  const textSizeClass = xs
+    ? "text-xs"
+    : s
+    ? "text-sm"
+    : m
+    ? "text-base"
+    : l
+    ? "text-lg"
+    : xl
+    ? "text-xl"
+    : "text-base";
 
-  font-weight: ${(props) =>
-    props.light ? "300" : props.semib ? "600" : props.bold ? "700" : "400"};
+  const fontWeightClass = light
+    ? "font-light"
+    : semib
+    ? "font-semibold"
+    : bold
+    ? "font-bold"
+    : "font-medium";
 
-  color: ${(props) => (props.grey ? "grey" : "inherit")};
+  const textColorClass = grey ? "text-gray-500" : "";
 
-  background-image: ${(props) =>
-    props.brand
-      ? "linear-gradient(315deg, #2a2a72 0%, #009ffd 74%)"
-      : "inherit"};
+  const backgroundClass = brand
+    ? "bg-gradient-to-br from-blue-700 to-cyan-400 bg-clip-text text-transparent"
+    : "";
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: ${(props) =>
-    props.brand ? "transparent" : "inherit"};
-  @media (max-width: 768px) {
-    font-size: ${(props) =>
-      props.xs
-        ? "10px"
-        : props.s
-        ? "12px"
-        : props.m
-        ? "14px"
-        : props.l
-        ? "16px"
-        : props.xl
-        ? "20px"
-        : "16px"};
-  }
-`;
+  const mediaQueryTextSizeClass = xs
+    ? "md:text-sm"
+    : s
+    ? "md:text-base"
+    : m
+    ? "md:text-lg"
+    : l
+    ? "md:text-xl"
+    : xl
+    ? "md:text-2xl"
+    : "md:text-base";
 
-const Text = (props) => {
-  return (
-    <BaseText
-      xs={props.xs}
-      s={props.s}
-      m={props.m}
-      l={props.l}
-      xl={props.xl}
-      semib={props.semib}
-      bold={props.bold}
-      light={props.light}
-      grey={props.grey}
-      brand={props.brand}
-      className={`${props.className} w-full`}
-    >
-      {props.children}
-    </BaseText>
-  );
+  const classes = `${textSizeClass} ${fontWeightClass} ${textColorClass} ${backgroundClass} ${mediaQueryTextSizeClass} ${className} w-full`;
+
+  return <div className={classes}>{children}</div>;
 };
 
 export default Text;

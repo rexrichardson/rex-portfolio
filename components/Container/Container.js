@@ -1,21 +1,4 @@
-import styled from "styled-components";
 import "aos/dist/aos.css";
-import Spacer from "../Spacer/Spacer";
-
-const BaseContainer = styled.div`
-  width: 100%;
-  background-color: ${(props) =>
-    props.theme === "black"
-      ? "black"
-      : props.theme === "grey"
-      ? "rgb(249,250,251)"
-      : "white"};
-  color: ${(props) => (props.theme === "black" ? "white" : "black")};
-  padding-left: 5vw;
-  padding-right: 5vw;
-  min-height: ${(props) => (props.fullHeight ? "100vh" : "auto")};
-  position: relative;
-`;
 
 const Container = ({
   theme,
@@ -26,24 +9,32 @@ const Container = ({
   grey,
   aos,
 }) => {
+  const containerClasses = `w-full ${
+    theme === "black"
+      ? "bg-black text-white"
+      : theme === "grey"
+      ? "bg-gray-100"
+      : "bg-white text-black"
+  } ${className}`;
+
+  const contentClasses = `pb-16 pt-8 px-4 sm:px-8 lg:px-16 xl:px-24  ${
+    aos ? `aos-${aos}` : "fade-up"
+  }`;
+
   return (
-    <BaseContainer
-      className={className}
+    <div
       id={id}
-      fullHeight={fullHeight}
-      grey={grey}
-      theme={theme}
+      className={containerClasses}
+      style={fullHeight ? { minHeight: "100vh" } : {}}
     >
       <div
-        data-aos={aos ? aos : "fade-up"}
         data-aos-duration="500"
         data-aos-offset="300"
+        className={contentClasses}
       >
-        <Spacer xl />
         {children}
-        <Spacer xxl />
       </div>
-    </BaseContainer>
+    </div>
   );
 };
 

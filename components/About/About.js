@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Container from "../Container/Container";
 import HeaderText from "../HeaderText/HeaderText";
-import Spacer from "../Spacer/Spacer";
 import Text from "../Text/Text";
 import styles from "./About.module.css";
 
@@ -11,7 +10,7 @@ const About = () => {
       <HeaderText l bold>
         About Me
       </HeaderText>
-      <Spacer l />
+
       <div>
         <div className={styles.aboutFlex}>
           <div className="w-full md:w-[80rem]">
@@ -24,7 +23,7 @@ const About = () => {
             />
           </div>
           <div>
-            <Text l light className={"text-justify"}>
+            <Text xl light className={"text-justify"}>
               Since developing my first mobile app, KSI Sounds, at 13, I&apos;ve
               cultivated a passion for app creation that has broadened to
               include web applications.
@@ -43,44 +42,6 @@ const About = () => {
               business insights, further strengthening my approach to creating
               practical and efficient digital solutions.
             </Text>
-            <Spacer xxl />
-            {/*  <Text m grey>
-              Experience
-            </Text>
-            <Spacer m />
-            <ul className={styles.list}>
-              <li>
-                <Text l light>
-                  4 years running a tech company, Tex Technologies, part time.
-                </Text>
-                <Text l light>
-                  1 year at Discovery as a digital designer and front end web
-                  developer. Contributed to development of the design system for
-                  Dplay (now Discovery+).
-                </Text>
-              </li>{" "}
-              <Spacer xs />
-              <li>
-                <Text l light>
-                  2 years experience running Tex Technologies LTD where I am
-                  responsible for front end web development.
-                </Text>
-              </li>
-              <Spacer xs />
-              <li>
-                <Text l light>
-                  Several work experience jobs in the digital industry.
-                </Text>
-              </li>
-              <Spacer m />
-            </ul>
-            <Text l>
-              View in full on my{" "}
-              <a href="https://www.linkedin.com/in/rex-richardson/?originalSubdomain=uk">
-                LinkedIn
-              </a>
-              .{" "}
-            </Text> */}
           </div>
         </div>
       </div>

@@ -1,34 +1,33 @@
 .nav {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	z-index: 10;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  z-index: 10;
 }
 
 .nav a {
-	cursor: pointer;
-	-webkit-transition: 0.3s ease-in-out;
-	transition: 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .rightNav {
-	display: flex;
+  display: flex;
 }
 
 .leftNav {
-	display: flex;
+  display: flex;
 }
 
 .rightNav a {
-	margin-left: 20px;
-	font-weight: 600;
+  margin-left: 20px;
+  font-weight: 600;
 }
 
 .nav a:hover {
-	transform: scale(1.04);
+  transform: scale(1.04);
 }

@@ -5,25 +5,25 @@ import { render } from "react-dom";
 import InteractiveImage from "../InteractiveImage/InteractiveImage";
 
 const WorkImages = ({ images, width }) => {
-	{
-		return (
-			<div>
-				<div
-					className={
-						width === "full"
-							? styles.fullImages
-							: width == "third"
-							? styles.thirdImages
-							: styles.halfImages
-					}
-				>
-					{images.map((image, index) => (
-						<InteractiveImage key={index} imageUrl={image} />
-					))}
-				</div>
-			</div>
-		);
-	}
+  {
+    return (
+      <div>
+        <div
+          className={`${
+            width === "full"
+              ? styles.fullImages
+              : width == "third"
+              ? styles.thirdImages
+              : styles.halfImages
+          } `}
+        >
+          {images.map((image, index) => (
+            <InteractiveImage key={index} imageUrl={image} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 };
 
 export default WorkImages;

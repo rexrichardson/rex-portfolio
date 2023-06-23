@@ -6,13 +6,10 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { getAllPosts } from "../lib/api";
 import Hero from "../components/Hero/Hero";
-import { useEffect } from "react";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
-import Spacer from "../components/Spacer/Spacer";
 import SkillsRow from "../components/SkillsRow/SkillsRow";
-import GridPattern from "../components/GridPattern/GridPattern";
 
 export default function Home({ allPosts }) {
   const work = allPosts;

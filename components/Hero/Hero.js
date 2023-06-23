@@ -1,6 +1,4 @@
-import HeaderText from "../HeaderText/HeaderText";
 import ScrollDown from "../ScrollDown/ScrollDown";
-import Spacer from "../Spacer/Spacer";
 import Styles from "./Hero.module.css";
 
 const Hero = () => (
@@ -12,15 +10,14 @@ const Hero = () => (
     <div className="mx-auto  px-6 lg:px-20 flex items-center h-full">
       <div>
         <div className={Styles.container}>
-          <HeaderText l center light>
+          <h1 className="text-4xl font-light tracking-tight text-gray-900 sm:text-5xl pb-4 text-center sm:leading-[1.25]		">
             Hi, I{"'"}m{" "}
-            <HeaderText l bold brand center>
-              Rex Richardson.&nbsp;
-            </HeaderText>
-            A full-stack developer with a passion for design, specialising in
-            React.js and React Native.
-          </HeaderText>
-          <Spacer l />
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-700 to-cyan-400 font-bold">
+              Rex Richardson
+            </span>
+            . I{"'"}m a full-stack developer with a strong eye for design,
+            specializing in React.js and React Native.
+          </h1>
           <ScrollDown to="about" />
         </div>
       </div>

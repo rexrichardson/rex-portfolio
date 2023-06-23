@@ -5,7 +5,6 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import WorkBody from "../../components/WorkBody/WorkBody";
 import WorkPageHeader from "../../components/WorkPageHeader/WorkPageHeader";
 import NavBar from "../../components/NavBar/NavBar";
-import Spacer from "../../components/Spacer/Spacer";
 import WorkImages from "../../components/WorkImages/WorkImages";
 import YouTube from "react-youtube";
 import styles from "./WorkPage.module.css";
@@ -49,17 +48,13 @@ export default function Post({ post }) {
                 theme={light ? "white" : "black"}
                 handleChange={() => setLight(!light)}
               ></WorkPageHeader>
-              <Spacer l />
               <InteractiveImage
                 imageUrl={post.mainImage ? post.mainImage : post.coverImage}
               />
-              <Spacer l />
               <WorkBody content={post.content} />
-              <Spacer l />
               {post.fullImages && (
                 <WorkImages width="full" images={post.fullImages} />
               )}
-              <Spacer l />
 
               {post.halfImages && (
                 <WorkImages width="half" images={post.halfImages} />
@@ -68,8 +63,6 @@ export default function Post({ post }) {
               {post.thirdImages && (
                 <WorkImages width="third" images={post.thirdImages} />
               )}
-
-              <Spacer l />
 
               {post.youtube && (
                 <div className={styles.video}>
@@ -82,7 +75,6 @@ export default function Post({ post }) {
             </article>
           </>
         )}
-        <Spacer xl />
       </Container>
       <Footer />
     </div>

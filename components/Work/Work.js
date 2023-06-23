@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Container from "../Container/Container";
-import Spacer from "../Spacer/Spacer";
 import Text from "../Text/Text";
 import WorkItem from "../WorkItem/WorkItem";
 import styles from "./Work.module.css";
@@ -17,10 +16,8 @@ const Work = ({ work, showAll }) => {
       theme="grey"
       className={"border-b border-t border-gray-300 "}
     >
-      <div className="flex justify-between w-full items-center">
-        <HeaderText s bold>
-          My Work
-        </HeaderText>
+      <div className="flex justify-between w-full items-center pb-6">
+        <h2 className="text-xl md:text-2xl font-bold">My Work</h2>
         {showAll === false && (
           <div>
             <Link href="/work" className={styles.viewAll}>
@@ -35,7 +32,6 @@ const Work = ({ work, showAll }) => {
         )}
       </div>
 
-      <Spacer xl />
       <div className={styles.grid}>
         {work &&
           work
@@ -49,7 +45,6 @@ const Work = ({ work, showAll }) => {
               />
             ))}
       </div>
-      <Spacer s />
     </Container>
   );
 };

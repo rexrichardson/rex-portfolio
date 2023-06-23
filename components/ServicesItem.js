@@ -7,7 +7,6 @@ import {
   MdOutlineDesignServices,
 } from "react-icons/md";
 import BulletCheck from "./BulletCheck/BulletCheck";
-import Spacer from "./Spacer/Spacer";
 import GridPattern from "./GridPattern/GridPattern";
 
 function ResourcePattern({ mouseX, mouseY, ...gridProps }) {
@@ -75,16 +74,16 @@ export default function ServicesItem({ service, theme }) {
         ) : (
           ""
         )}
-        <h3 className="mt-2 text-large font-semibold leading-7 text-zinc-900 sm:text-xl">
+        <h3 className="mt-2 text-large font-semibold leading-7 text-zinc-900 sm:text-xl pb-8">
           {service.title}
         </h3>
-        <Spacer l />
-        <div className="flex flex-col gap-2">
+      
+        <div className="flex flex-col gap-2 pb-4">
           {service.points.map((point) => (
             <BulletCheck key={point} text={point} />
           ))}
         </div>
-        <Spacer m />
+       
       </div>
     </div>
   );

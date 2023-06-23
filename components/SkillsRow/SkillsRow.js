@@ -1,7 +1,5 @@
 import Text from "../Text/Text";
 import Container from "../Container/Container";
-import Spacer from "../Spacer/Spacer";
-import styles from "./SkillsRow.module.css";
 import HeaderText from "../HeaderText/HeaderText";
 import ServicesItem from "../ServicesItem";
 
@@ -10,14 +8,13 @@ const SkillsRow = () => {
     <Container
       theme="white"
       aos="fade-left"
-      className={" border-gray-300 pb-8 sm:pb-24"}
+      className={" border-gray-300 pb-8 sm:pb-16"}
     >
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between pb-8">
         <div>
           <HeaderText l bold>
             My Services
           </HeaderText>
-          <Spacer s />
           <Text m light grey>
             Drawing on years of experience in web and mobile app development, I
             combine my strong development skills with a keen eye for design to
@@ -25,7 +22,6 @@ const SkillsRow = () => {
           </Text>
         </div>
       </div>
-      <Spacer xl />
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <ServicesItem
@@ -89,7 +85,6 @@ const SkillsRow = () => {
           }}
         />
       </div>
-      <Spacer xl />
     </Container>
   );
 };

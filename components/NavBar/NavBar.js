@@ -8,7 +8,7 @@ const NavBar = ({ home }) => {
 
   return (
     <div
-      className={`${styles.nav}  ${
+      className={`px-4 sm:px-8 lg:px-16 xl:px-24 ${styles.nav}  ${
         !home ? "bg-white" : "absolute top-0 left-0"
       }`}
     >
