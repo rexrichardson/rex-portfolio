@@ -1,4 +1,3 @@
-import Text from "../Text/Text";
 import Tag from "../Tag/Tag";
 import styles from "./WorkPageHeader.module.css";
 import HeaderText from "../HeaderText/HeaderText";

@@ -23,7 +23,7 @@ const About = () => {
             />
           </div>
           <div>
-            <Text xl light className={"text-justify"}>
+            <Text l light className={"text-justify"}>
               Since developing my first mobile app, KSI Sounds, at 13, I&apos;ve
               cultivated a passion for app creation that has broadened to
               include web applications.
