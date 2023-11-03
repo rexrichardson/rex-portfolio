@@ -15,7 +15,7 @@ const Hero = () => (
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-700 to-cyan-400 font-bold">
               Rex Richardson
             </span>
-            . I{"'"}m a full-stack developer with a strong eye for design,
+            . I{"'"}m a front end developer with a strong eye for design,
             specializing in React.js and React Native.
           </h1>
           <ScrollDown to="about" />
