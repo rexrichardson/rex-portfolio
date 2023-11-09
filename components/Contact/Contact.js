@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button
-              href="mailto: rex.richardson@me.com"
+              href="mailto:rex.richardson@me.com"
               text="Email Me"
               color="brand"
               size="lg"
