@@ -42,9 +42,10 @@ export default function Post({ post }) {
                 title={post.title}
                 theme={light ? "white" : "black"}
                 handleChange={() => setLight(!light)}
-             />
+              />
               <ArticleMainImage
                 imageUrl={post.mainImage ? post.mainImage : post.coverImage}
+                alt={post.title}
               />
               <WorkBody content={post.content} />
               {post.fullImages && (
