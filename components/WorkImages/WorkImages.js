@@ -1,13 +1,10 @@
 import styles from "./WorkImages.module.css";
-import { useEffect, useState } from "react";
-import Gallery from "react-grid-gallery";
-import { render } from "react-dom";
 import InteractiveImage from "../InteractiveImage/InteractiveImage";
 
 const WorkImages = ({ images, width }) => {
   {
     return (
-      <div>
+      <div className="py-8">
         <div
           className={`${
             width === "full"
@@ -18,7 +15,9 @@ const WorkImages = ({ images, width }) => {
           } `}
         >
           {images.map((image, index) => (
-            <InteractiveImage key={index} imageUrl={image} />
+            <div className="relative h-[800px] w-auto object-fill" key={index}>
+              <InteractiveImage imageUrl={image} />
+            </div>
           ))}
         </div>
       </div>

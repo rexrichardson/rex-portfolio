@@ -13,6 +13,7 @@ import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Head from "next/head";
 import InteractiveImage from "../../components/InteractiveImage/InteractiveImage";
+import ArticleMainImage from "../../components/ArticleMainImage/ArticleMainImage";
 
 export default function Post({ post }) {
   const [light, setLight] = useState(false);
@@ -29,11 +30,7 @@ export default function Post({ post }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <Container
-        aos="none"
-        theme={"grey"}
-        className={"border-t border-gray-300"}
-      >
+      <Container aos="none" theme="grey" className={"border-t border-gray-300"}>
         {router.isFallback ? (
           <div>Loading.</div>
         ) : (
@@ -45,8 +42,8 @@ export default function Post({ post }) {
                 title={post.title}
                 theme={light ? "white" : "black"}
                 handleChange={() => setLight(!light)}
-              ></WorkPageHeader>
-              <InteractiveImage
+             />
+              <ArticleMainImage
                 imageUrl={post.mainImage ? post.mainImage : post.coverImage}
               />
               <WorkBody content={post.content} />

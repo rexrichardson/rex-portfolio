@@ -1,34 +1,35 @@
+import Image from "next/image";
 import styles from "./InteractiveImage.module.css";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { MdDirtyLens } from "react-icons/md";
 
 const InteractiveImage = ({ imageUrl }) => {
-	const [modalToggled, setModalToggled] = useState(false);
+  const [modalToggled, setModalToggled] = useState(false);
 
-	const clicked = () => {
-		modalToggled === false ? setModalToggled(true) : setModalToggled(false);
-	};
+  const clicked = () => {
+    modalToggled === false ? setModalToggled(true) : setModalToggled(false);
+  };
 
-	return (
-		<div>
-			<img
-				className={styles.interactiveImage}
-				src={imageUrl}
-				onClick={() => clicked()}
-			/>
-			{modalToggled && (
-				<div className={styles.modal}>
-					<div className={styles.closeButton} onClick={() => clicked()}>
-						<AiFillCloseCircle size={50} />
-					</div>
-					<div className={styles.modalImageContainer}>
-						<img className={styles.modalImage} src={imageUrl} />
-					</div>
-				</div>
-			)}
-		</div>
-	);
+  return (
+    <>
+      <Image
+        className="object-contain"
+        fill
+        src={imageUrl}
+        onClick={() => clicked()}
+      />
+      {modalToggled && (
+        <div className={styles.modal}>
+          <div className={styles.closeButton} onClick={() => clicked()}>
+            <AiFillCloseCircle size={50} />
+          </div>
+          <div className={styles.modalImageContainer}>
+            <img className={styles.modalImage} src={imageUrl} />
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default InteractiveImage;
