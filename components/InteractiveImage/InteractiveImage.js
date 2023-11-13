@@ -3,7 +3,7 @@ import styles from "./InteractiveImage.module.css";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const InteractiveImage = ({ imageUrl }) => {
+const InteractiveImage = ({ imageUrl, sizes }) => {
   const [modalToggled, setModalToggled] = useState(false);
 
   const clicked = () => {
@@ -17,6 +17,7 @@ const InteractiveImage = ({ imageUrl }) => {
         fill
         src={imageUrl}
         onClick={() => clicked()}
+        sizes={sizes}
       />
       {modalToggled && (
         <div className={styles.modal}>

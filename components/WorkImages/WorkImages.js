@@ -16,7 +16,17 @@ const WorkImages = ({ images, width }) => {
         >
           {images.map((image, index) => (
             <div className="relative h-[800px] w-auto object-fill" key={index}>
-              <InteractiveImage imageUrl={image} />
+              <InteractiveImage
+                imageUrl={image}
+                sizes={
+                  width == "full"
+                    ? "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 50vw"
+                    : width == "third"
+                    ? "(max-width: 768px) 30vw, (max-width: 1200px) 25vw, 17vw"
+                    : (sizes =
+                        "(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 25vw")
+                }
+              />
             </div>
           ))}
         </div>
