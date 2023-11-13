@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Styles from "./Button.module.css";
 
-export default function Button({ size = "sm", text, color = "light" }) {
+export default function Button({ size = "sm", text, color = "light", href }) {
   let btnClass;
   let colorClass;
 
@@ -47,11 +48,12 @@ export default function Button({ size = "sm", text, color = "light" }) {
   }
 
   return (
-    <button
+    <Link
       type="button"
       className={`${btnClass} ${colorClass} w-fit  hover:scale-105	transition-all ease-in-out`}
+      href={href}
     >
       {text}
-    </button>
+    </Link>
   );
 }
