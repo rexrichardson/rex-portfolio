@@ -14,10 +14,9 @@ import Footer from "../../components/Footer/Footer";
 import Head from "next/head";
 import InteractiveImage from "../../components/InteractiveImage/InteractiveImage";
 import ArticleMainImage from "../../components/ArticleMainImage/ArticleMainImage";
+import formatDate from "../../helpers/formatDate";
 
 export default function Post({ post }) {
-  const [light, setLight] = useState(false);
-
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -40,8 +39,7 @@ export default function Post({ post }) {
               <WorkPageHeader
                 tags={post.tags}
                 title={post.title}
-                theme={light ? "white" : "black"}
-                handleChange={() => setLight(!light)}
+                date={formatDate(post.date)}
               />
               <ArticleMainImage
                 imageUrl={post.mainImage ? post.mainImage : post.coverImage}
