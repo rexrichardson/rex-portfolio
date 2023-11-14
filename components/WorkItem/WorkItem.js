@@ -19,7 +19,7 @@ const WorkItem = (props) => {
           fill
           className="relative rounded-lg object-cover"
           alt={props.name}
-          sizes="(max-width: 768px) 100vw, (max-width: 1500px) 25vw, 20vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1500px) 30vw, 30vw"
           quality={100}
         />
         <div className="absolute w-full h-full  bg-gradient-to-t from-black  to-transparent top-0 left-0 opacity-10 rounded-lg"></div>

@@ -1,18 +1,11 @@
-.workPageHeader {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-@media only screen and (max-width: 400px) {
-	.workPageHeader {
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}
-
-	.tags {
-		margin-top: 16px;
-	}
+.tags {
+  margin-top: 16px;
+  gap: 10px; /* adjust the gap as needed */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

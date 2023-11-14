@@ -9,7 +9,7 @@ const Tag = ({ theme, value }) => {
 
   return (
     <div
-      className={`rounded-full ${backgroundClass} ${colorClass} px-4 py-2 inline-flex mr-4 h-full font-light text-sm`}
+      className={`rounded-full ${backgroundClass} ${colorClass} px-4 py-2 flex h-full font-light text-sm w-fit`}
     >
       {value}
     </div>
