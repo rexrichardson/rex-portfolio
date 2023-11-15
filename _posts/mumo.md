@@ -1,36 +1,23 @@
 ---
 title: "Mumo App"
-coverImage: "/assets/work/solespy-app/cover.webp"
-date: "2023-05-01T05:55:07.322Z"
+coverImage: "/assets/work/mumo/cover.webp"
+date: "2023-11-15T05:55:07.322Z"
 halfImages:
 thirdImages:
 youtube:
-mainImage: "/assets/work/solespy-app/cover.webp"
+mainImage: "/assets/work/mumo/cover.webp"
 tags:
   - "React Native"
   - "Firebase"
+  - "Next.js"
 ---
 
-## Migrating the SoleSpy website to app
+I was tasked with developing a Minimum Viable Product (MVP) prototype for a ticketing application startup, Mumo.io. Leveraging my expertise in React Native, Expo, and Firebase, I selected these technologies to form the core of the tech stack.
 
-Following the successful rollout of the SoleSpy website, it became evident that the vast majority, about 95%, of users were accessing the platform via mobile devices. Acknowledging the advantages of mobile apps in terms of enhancing user retention and integrating added features, I embarked on the journey to develop the SoleSpy App, utilizing React Native and Expo.
+In my development process, I meticulously replicated the UI designs provided to me, ensuring that the final product not only matched the envisioned aesthetics but also integrated high-quality animations. This attention to detail was crucial in delivering an engaging and seamless user experience.
 
-### Front End Design and Development
+A key aspect of this project was integrating Firebase Authentication and Firebase Firestore. This allowed for robust user authentication and efficient data display within the app, enhancing both security and functionality.
 
-In the initial phase of the project, the focus was primarily on front-end design and development. The first step involved meticulously designing the user interface using Figma, ensuring a smooth and intuitive experience for our users. Once the design was finalized, the next step was to bring this design to life. This was achieved by crafting the necessary components using React Native, a powerful framework that allowed for seamless translation of the design into a functional mobile app.
+Furthermore, I developed a custom admin dashboard using Next.js 13. This dashboard enables easy management and addition of events to the app, offering a streamlined backend solution for the administrative team.
 
-### Integrating the Backend
-
-Moving on to the backbone of the app—the backend, the key task was to fill the app with data. To accomplish this, I leveraged the Realm React Native SDK to establish a direct connection with my MongoDB database. This efficient bridge between the database and the app ensured real-time data accessibility, allowing the app to serve up-to-date sneaker prices and details to our users.
-
-### Introducing Additional Features: The Price Alerts System
-
-Aiming to enrich the app with features not present on the website, I developed a price alerts mechanism. This feature notifies users when the price of a particular sneaker drops, enhancing user engagement and utility. The alerts system was built using Firebase and Expo-Notifications.
-
-To facilitate this, Firebase Auth was implemented, allowing users to create shoe subscriptions. Firebase Cloud Functions were employed to dispatch the notifications. Additionally, a separate table was created in the MongoDB database, which recorded the daily prices of each sneaker in every size.
-
-To analyze this vast pool of data and trigger alerts where price drops were detected, I crafted a Python script. This script was designed to scrutinize the data daily and generate notification documents in Firebase for any price reductions, ensuring our users never miss a good deal.
-
-### App Launch
-
-So far the app has had 1,000 downloads with 250 registered users. Check it out [here](https://apps.apple.com/gb/app/solespy/id6449229395)
+These efforts culminated in a comprehensive and user-friendly MVP that met the startup's requirements and set a strong foundation for future development.
