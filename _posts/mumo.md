@@ -4,7 +4,14 @@ coverImage: "/assets/work/mumo/cover.webp"
 date: "2023-11-15T05:55:07.322Z"
 halfImages:
 thirdImages:
-youtube:
+  - "/assets/work/mumo/1.png"
+  - "/assets/work/mumo/5.png"
+  - "/assets/work/mumo/2.png"
+  - "/assets/work/mumo/3.png"
+  - "/assets/work/mumo/4.png"
+  - "/assets/work/mumo/6.png"
+
+youtube: "LV8bNnKolak"
 mainImage: "/assets/work/mumo/cover.webp"
 tags:
   - "React Native"

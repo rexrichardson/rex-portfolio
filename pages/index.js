@@ -6,7 +6,6 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { getAllPosts } from "../lib/api";
 import Hero from "../components/Hero/Hero";
-
 import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
 import SkillsRow from "../components/SkillsRow/SkillsRow";
