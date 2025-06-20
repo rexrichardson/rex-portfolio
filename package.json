@@ -41,6 +41,6 @@
     "eslint-config-next": "^13.4.6"
   },
   "engines": {
-    "yarn": "1.22.17"
+    "yarn": ">=1.22.17"
   }
 }
